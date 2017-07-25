@@ -1,0 +1,33 @@
+\subsection*{How it works}
+
+Reads the xml file in a specific way to display it. Every xml file needs to be based on a specific validation file (xsd). It need to have the filename based on the xml schema. The xml syntax is read through a
+
+Eg.\+: Tanach-\/xml has various book files. The folder for the xml files needs to have the same name as the schema. (tanach-\/xml). Tanach-\/xml needs a validation file in xsd format (tanach-\/xml.\+xsd). To check if the file in the folder is an actual tanach-\/xml file or something else. Tanach-\/xml needs a json file with the same schema name (tanach-\/xml.\+json), to read an process the content correctly.
+
+Folder\+: xml -\/$>$ validation file -\/$>$ json -\/$>$precessing.
+
+\subsection*{Structure of the json file}
+
+Xml-\/tag \+: operation
+
+\subsection*{Operations}
+
+Usage on how to handle the X\+ML tags.
+
+
+\begin{DoxyItemize}
+\item ignore -\/ ignores the tag.
+\item important
+\item read -\/ simply reads the tag and displays the content/children in the X\+M\+L\+Reader.
+\item desc -\/ reads the content and displays it in the File Description.
+\item encoding -\/ important for the file encoding.
+\item abbrev -\/ is used for the book abbreviation (searchable).
+\item chapter -\/ displays the whole chapter.
+\item word -\/ the simple word to display.
+\item verse -\/ displays the whole verse.
+\item value -\/ a numerical value (usally an attribute).
+\item attrib -\/ a simple attribute (usally text).
+\item link -\/ U\+RL link.
+\item folder -\/ all the necessary books are in a folder.
+\item single -\/ all the necessary books are in the same file. 
+\end{DoxyItemize}
